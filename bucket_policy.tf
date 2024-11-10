@@ -1,5 +1,5 @@
 module "bucket_policy" {
-  source  = "./modules/policy"
+  source  = "./module/policy"
 
   bucket_name        = aws_s3_bucket.this.id
   bucket_policy      = var.bucket_policy
